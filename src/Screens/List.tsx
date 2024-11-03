@@ -14,11 +14,8 @@ const List = ({ navigation }: BooksScreenProps) => {
 
   const fetchBooks = async (query: string) => {
     try {
-      const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=10`
-      );
-      const data = await response.json();
-      setBooks(data.items || []);
+      // TODO: Implementar requisição HTTP
+      // URL: https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=10
     } catch (error) {
       console.error("Error fetching books:", error);
     }

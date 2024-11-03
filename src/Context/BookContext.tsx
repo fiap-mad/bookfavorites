@@ -15,13 +15,11 @@ const BookProvider = ({ children }: PropsWithChildren) => {
   const [storedBooks, setStoredBooks] = useState<Book[]>();
 
   const storeBook = async (book: Book) => {
-    const doc = firestore.doc(books, book.id);
-    await firestore.setDoc(doc, { ...book });
+    // TODO: Salvar o livro no Firestore
   };
 
   const removeBook = async (book: Book) => {
-    const doc = firestore.doc(books, book.id);
-    await firestore.deleteDoc(doc);
+    // TODO: Deletar o livro do Firestore
   };
 
   useEffect(() => {

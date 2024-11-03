@@ -44,7 +44,8 @@ const BookItem = ({ navigation, book }: BookItemProps) => {
           source={{ uri: book.volumeInfo.imageLinks?.thumbnail }}
         />
       )}
-      onPress={() => navigation.navigate("Details", { book })}
+      // TODO: Implementar a navegação para a tela de detalhes
+      // onPress={}
       right={() => (
         <IconButton
           icon={isStored ? "bookmark-minus" : "bookmark-plus"}

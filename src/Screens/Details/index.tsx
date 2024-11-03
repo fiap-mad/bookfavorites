@@ -10,22 +10,7 @@ const Details = ({ route }: BookDetailsScreenProps) => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Image
-          style={styles.image}
-          source={{ uri: book.volumeInfo.imageLinks?.thumbnail }}
-        />
-        <Text variant="headlineLarge" style={styles.text}>
-          Título
-        </Text>
-        <Text variant="titleMedium">{book.volumeInfo.title}</Text>
-        <Text variant="headlineLarge" style={styles.text}>
-          Sub Título
-        </Text>
-        <Text variant="titleMedium">{book.volumeInfo.subtitle}</Text>
-        <Text variant="headlineLarge" style={styles.text}>
-          Descrição
-        </Text>
-        <Text variant="labelMedium">{book.volumeInfo.description}</Text>
+        {/* TODO: Exibir capa, titulo, sub titulo e descrição do livro */}
       </View>
     </ScrollView>
   );
